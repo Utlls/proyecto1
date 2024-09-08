@@ -37,12 +37,12 @@ st.subheader("Dispersión: Precios en el mercado de autos usados.")
 
 st.write("Muestra la concentración de los precios, y la distribucción")
 
-sca_checkbox = st.checkbox('Construir histograma')  # crear un botón
+sca_checkbox = st.checkbox('Construir grafico de dispersión')  # crear un botón
 
 if sca_checkbox:  # al hacer clic en el botón
     # escribir un mensaje
 
-    st.write('Creación de Geafico de Dispersión para el conjunto de datos donde nos muestra la correlación entre las variables precio y año del modelo.')
+    st.write('Creación de Grafico de Dispersión para el conjunto de datos donde nos muestra la correlación entre las variables precio y año del modelo.')
 
     # crea un grafico de dispersión
     fig1 = px.scatter(car_data, x="price", y="model_year")
